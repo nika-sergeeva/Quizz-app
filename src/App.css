@@ -3,7 +3,7 @@ main{
     justify-content: center;
     align-items: center;
     padding: 0;
-    position: relative;
+    height: 100%;
 }
 main::before{
    content: url(./images/blob\ 5.svg);
@@ -22,6 +22,7 @@ main::after{
  .main{
     padding-top: 50px;
     z-index: 5;
+    height: 100%;
  }
 .intro-box {
     display: flex;
