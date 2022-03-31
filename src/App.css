@@ -4,6 +4,9 @@ main{
     align-items: center;
     padding: 0;
     height: 100%;
+    background-image: url(./images/blobs.svg);
+    background-repeat: no-repeat;
+    background-position: left 100%;
 }
 main::before{
    content: url(./images/blob\ 5.svg);
@@ -12,13 +15,13 @@ main::before{
    right: 0;
    z-index: 0;
 }
-main::after{
+/* main::after{
     content: url(./images/blobs.svg);
     position: absolute;
     bottom: 0;
     left: 0;
     z-index: 0;
- }
+ } */
  .main{
     padding-top: 50px;
     z-index: 5;
