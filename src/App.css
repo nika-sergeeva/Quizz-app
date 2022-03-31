@@ -7,7 +7,6 @@ main{
     background-image: url(./images/blobs.svg);
     background-repeat: no-repeat;
     background-position: left 100%;
-    background-size: cover;
 }
 main::before{
    content: url(./images/blob\ 5.svg);
