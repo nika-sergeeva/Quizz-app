@@ -3,37 +3,32 @@ main{
     justify-content: center;
     align-items: center;
     padding: 0;
-    height: 100%;
-    background-image: url(./images/blobs.svg);
-    background-repeat: no-repeat;
-    background-position: left 100%;
-    background-attachment: fixed;
+    height: fit-content;
+    min-height: 100vh;
+    background-image: url('./images/blob\ 5.svg'), url('./images/blobs.svg');
+    background-position: right top, left bottom;
+    background-repeat: no-repeat, no-repeat;
 }
-main::before{
-   content: url(./images/blob\ 5.svg);
-   position: absolute;
-   top: 0;
-   right: 0;
-   z-index: 0;
-}
-/* main::after{
-    content: url(./images/blobs.svg);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
- } */
  .main{
-    padding-top: 50px;
     z-index: 5;
+    display: flex;
+    flex-direction: column;
     height: 100%;
+ }
+ .container{
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./images/blob\ 5.svg'), url('./images/blobs.svg');
+    background-position: right top, left bottom;
+    background-repeat: no-repeat, no-repeat;
  }
 .intro-box {
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
     align-items: center;
-    padding-top: 15rem;
 }
 .intro-heading{
     font-family: 'Karla', sans-serif;
@@ -128,9 +123,7 @@ main::before{
 
 @media only screen and (max-width: 704px)  {
     .main{
-        padding-right: 15px;
-        padding-left: 15px;
-        padding-bottom: 50px;
+        padding: 55px 15px 50px 15px;
      }
     .questions-box{
         width: auto;

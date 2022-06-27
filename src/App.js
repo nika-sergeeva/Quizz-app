@@ -112,10 +112,11 @@ getQuizz()
 
 return (
   <div className="App">
-    <main>
+    
 
 {startGame  
 ?  
+<main>
 <div className="main">
 
     
@@ -138,11 +139,12 @@ return (
 </div>
           
 </div> 
+</main>
 :
 <Intro start={setTheGame}/> 
 }
 
-    </main>
+   
   </div>
 );
 }
